@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Doação</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Vendor CSS Files -->
+    <link href="../src/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../src/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../src/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between w-100">
+            <a href="dashboard.html" class="logo d-flex align-items-center">
+                <span class="d-none d-lg-block">Cuba Rações</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+
+            <div class="search-bar flex-grow-1 mx-2">
+                <form class="search-form d-flex align-items-center" method="POST" action="#">
+                    <input type="text" name="query" placeholder="Search" title="Enter search keyword"
+                        class="form-control">
+                    <button type="submit" title="Search" class="btn btn-outline-secondary"><i
+                            class="bi bi-search"></i></button>
+                </form>
+            </div>
+    </header><!-- End Header -->
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="adocao.html">
+                    <i class="bi bi-journal-text"></i><span>Adoção</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#">
+                    <i class="bi bi-envelope"></i>
+                    <span>Contato</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="login.html">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Login</span>
+                </a>
+            </li>
+
+        </ul>
+    </aside><!-- End Sidebar-->
+
+    <!-- ======= Main Content ======= -->
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Realize uma doação</h1>
+        </div><!-- End Page Title -->
+
+        <section class="section">
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Registrar animal</h5>
+                        <form>
+                            <!-- Nome do Animal -->
+                            <div class="row mb-3">
+                                <label for="inputNomeProduto" class="col-sm-2 col-form-label">Nome do Animal</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputNomeProduto"
+                                        placeholder="Digite o nome do animal">
+                                </div>
+                            </div>
+
+                            <!-- Descrição do Animal -->
+                            <div class="row mb-3">
+                                <label for="inputDescricao" class="col-sm-2 col-form-label">Descrição</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" id="inputDescricao" rows="3"
+                                        placeholder="Digite a descrição do animal"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Raça -->
+                            <div class="row mb-3">
+                                <label for="inputPreco" class="col-sm-2 col-form-label">Raça</label>
+                                <div class="col-sm-4">
+                                    <input type="text" id="inputPreco"
+                                        placeholder="Digite a raça do animal">
+
+                                <div class="container mt-5">
+                                    <h2>Selecione uma foto do animal</h2>
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="fileInput">Arquivo</label>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="fileInput" lang="pt-BR">
+                                                        <label class="custom-file-label" for="fileInput">Escolher arquivo...</label>
+                                                    </div>
+                                                </div>
+                                             <button type="submit" class="btn btn-primary">Enviar</button>
+                                        </form>
+                                 </div>
+                            </div>
+
+                            <!-- Categoria -->
+                            <div class="row mb-3">
+                                <label for="inputCategoria" class="col-sm-2 col-form-label">Cor</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select" id="inputCategoria">
+                                        <option selected>Escolha uma cor...</option>
+                                        <option value="1">Preto</option>
+                                        <option value="2">Branco</option>
+                                        <option value="3">Amarelo</option>
+                                        <option value="4">Cinza</option>
+                                        <option value="5">Out</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Botões de Ação -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="reset" class="btn btn-secondary">Limpar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End Main Content -->
+
+</body>
+
+</html>
